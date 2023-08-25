@@ -18,6 +18,6 @@ class Page extends Component<{ title: string }> {
 }
 
 const page = new Page({ title: "My Page" });
-page.pageInfo();
+page.pageInfo(); //?
 
 export {};
