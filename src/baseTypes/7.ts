@@ -12,9 +12,4 @@ enum DayOfWeek {
 	Saturday = "SATURDAY",
 }
 
-const isWeekend = (day: DayOfWeek): boolean => {
-	if (day === "SATURDAY" || day === "SUNDAY") {
-		return true;
-	}
-	return false;
-};
+const isWeekend = (day: DayOfWeek): boolean => day === "SATURDAY" || day === "SUNDAY";

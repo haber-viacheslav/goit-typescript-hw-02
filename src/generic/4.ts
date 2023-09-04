@@ -11,8 +11,8 @@ class Component<T extends ComponentProps> {
 	constructor(public props: T) {}
 }
 
-class Page extends Component<{ title: string }> {
-	pageInfo() {
+class Page extends Component<ComponentProps> {
+	pageInfo(): string {
 		return this.props.title;
 	}
 }
